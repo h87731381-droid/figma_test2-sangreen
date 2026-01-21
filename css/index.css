@@ -1,0 +1,214 @@
+@import url('./reset.css');
+@import url('./common.css');
+@import url('https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200');
+
+
+
+body {
+    background-color: #FFF6ED;
+}
+
+
+.title {}
+.title >h2 {
+    font-size: 40px;
+    color: black;
+}
+.title >p {
+    padding-top: 10px;
+    color: #555;
+}
+
+
+/*------------------------------------
+------------------header---------------*/
+
+header {
+    position: fixed;
+    left: 0; top: 0;
+    width: 100%;
+    background-color: #FFF6ED;
+    vertical-align: middle;
+    z-index: 1;
+}
+
+header >div {
+    width: 1300px;
+    margin: 0 auto;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+}
+
+header >div >h1 {
+    font-size: 20px;
+}
+header >div >h1 >a {
+    color: black;
+}
+
+header >div >nav {
+    display: flex;
+    align-items: center;
+}
+header >div >nav >a {
+    font-size: 10px;
+    padding: 0 20px;
+    color: black;
+}
+header >div >nav >p>a::after {
+    content:'menu';
+    font-family: 'Material Symbols Outlined';
+    
+}
+
+
+
+
+/* 인덱스 페이지 내용 */
+
+/*------------------------------------
+------------------main top---------------*/
+
+.spot {
+    width: 100%;
+    height: 100vh;
+    background: url('../imgs/main.jpg') 0 0 / cover no-repeat;
+    text-align: left;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+    position: relative;
+}
+.spot>div {
+    width: 100%;
+    
+}
+.spot>div >b {
+    font-size: 64px;
+}
+.spot>div >p {
+    font-size: 16px;
+    padding: 10px 0 30px;
+}
+
+
+
+
+/*------------------------------------
+------------------예약하기---------------*/
+.save {
+    width: 580px;
+    background-color: rgba(255, 255, 255, 0.432);
+    position: absolute;
+    right: 0; bottom: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+    padding: 5px 20px;
+}
+
+.save .room_save {
+    
+}
+.save .room_save >p {}
+.save .room_save >b {}
+
+.save .check >p {}
+.save .check >b {}
+
+.save a {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    border: 1px solid black;
+    padding: 15px 30px;
+    background-color: chocolate;
+
+}
+
+
+
+
+/*------------------------------------
+------------------room---------------*/
+.room {
+    width: 1300px;
+    margin: 0 auto;
+    padding: 195px 0;
+    
+}
+
+.room .room_title {
+    display: flex;
+    justify-content: space-between;
+}
+
+.room >p {
+    width: 100%;
+}
+.room >p >b {
+    
+}
+
+.room .room_title >a {}
+.room .room_title >a::after {
+    content: 'arrow_right_alt';
+    font-family: 'Material Symbols Outlined';
+    vertical-align: middle;
+}
+
+.room .room_rist {
+    
+}
+.room .room_rist >img {
+    
+}
+
+
+
+
+/*------------------------------------
+------------------Special---------------*/
+.Special {}
+
+.Special >p {}
+.Special >b {}
+
+.Special >a {}
+.Special >a::after {
+    content: 'arrow_right_alt';
+    font-family: 'Material Symbols Outlined';
+    vertical-align: middle;
+}
+
+.Special .Special_rist {}
+.Special .Special_rist >img {}
+
+
+
+
+/*------------------------------------
+------------------Tour---------------*/
+.tour {}
+
+.tour .tour_title {}
+.tour .tour_title >p {}
+.tour .tour_title >p >b {}
+
+.tour .tour_title >a {}
+.tour .tour_title >a::after {
+    content: 'arrow_right_alt';
+    font-family: 'Material Symbols Outlined';
+    vertical-align: middle;
+}
+
+.tour .tour_title .tour_note {}
+.tour .tour_title .tour_note >b {}
+.tour .tour_title .tour_note >p {}
+.tour .tour_title .tour_note >span {}
+
+.tour .tour_spot {}
+.tour .tour_spot >img {}
